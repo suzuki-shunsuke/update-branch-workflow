@@ -16,7 +16,7 @@ name: update pull request branch by pull request comment
 on: issue_comment
 jobs:
   update-branch:
-    uses: suzuki-shunsuke/update-branch-workflow/.github/workflows/update-branch.yaml@44efa1f0eeca612bd5540da858a4e52c4dde0324
+    uses: suzuki-shunsuke/update-branch-workflow/.github/workflows/update-branch.yaml@29187410ef7122d48f004f01b5244013a5880d2f # v0.1.0
     secrets:
       gh_app_id: ${{secrets.APP_ID}}
       gh_app_private_key: ${{secrets.APP_PRIVATE_KEY}}
