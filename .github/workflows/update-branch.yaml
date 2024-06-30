@@ -20,6 +20,7 @@ permissions: {}
 jobs:
   update-branch:
     # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_comment-use-issue_comment
+    timeout-minutes: 30
     if: github.event.issue.pull_request && github.event.comment.body == inputs.body
     runs-on: ubuntu-latest
     steps:
