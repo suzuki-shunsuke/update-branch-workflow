@@ -27,7 +27,7 @@ jobs:
       # secrets.GITHUB_TOKEN can't be used because it can't trigger GitHub Actions Workflow
       # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#using-the-github_token-in-a-workflow
       # > When you use the repository's GITHUB_TOKEN to perform tasks, events triggered by the GITHUB_TOKEN will not create a new workflow run
-      - uses: suzuki-shunsuke/github-token-action@a058de0a42e494414cf4c112436d663a06fd16c0 # v0.1.0
+      - uses: suzuki-shunsuke/github-token-action@350d7506222e3a0016491abe85b5c4dd475b67d1 # v0.2.1
         id: token
         with:
           github_token: ${{secrets.gh_token}}
